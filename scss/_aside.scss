@@ -1,0 +1,114 @@
+.main {
+  &__filter {
+    padding-left: 24px;
+  }
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  max-width: 354px;
+  @media screen and(max-width: 899px) {
+    display: none;
+  }
+  &__title {
+    margin: 0 0 32px 0;
+    color: $mist100Color;
+    font-size: $fontSizeH3;
+    line-height: $lineHeightH3;
+    font-weight: $fontWeight400;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  &__label {
+    &--children {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      @media screen and(min-width: 568px) {
+        display: none;
+      }
+    }
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $mist10Color;
+      &:hover .filter__label--children {
+        display: flex;
+      }
+      &:hover .svg--arr-down {
+        fill: $primaryColor;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__checkbox {}
+  &__button {
+    margin-top: 12px;
+    padding: 16px;
+    text-transform: uppercase;
+    color: $mist25Color;
+    font-size: $fontSize14;
+    line-height: $lineHeight16;
+    letter-spacing: 1.6px;
+    border: 1px solid $mist25Color;
+    transition: $transition5;
+    &:hover {
+      border-color: $primaryColor;
+      color: $primaryColor;
+    }
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+  &__container {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    &:checked+.custom-checkbox__span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/check.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid $primaryColor;
+    }
+    &:disabled+.custom-checkbox__span {
+      border: 1px solid $mist10Color;
+    }
+    &:focus+.custom-checkbox__span {
+      box-shadow: 0 0 5px $primaryColor;
+    }
+  }
+  &__span {
+    width: 18px;
+    height: 18px;
+    border: 1px solid $mist25Color;
+  }
+  &__text {
+    color: $mist100Color;
+    font-size: $fontSize14;
+    line-height: $lineHeight16;
+    letter-spacing: 1.6px;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

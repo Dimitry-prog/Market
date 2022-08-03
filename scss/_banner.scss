@@ -1,0 +1,32 @@
+.main {
+  &__banner {
+    margin-bottom: 80px;
+    @media screen and (max-width: 568px) {
+      margin: 0 12px 64px;
+    }
+  }
+}
+
+.banner {
+  background-image: url(../img/shop_banner.png);
+  background-repeat: no-repeat;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 568px) {
+    background-image: url(../img/banner_mobile.jpg);
+    min-height: 128px;
+    background-repeat: repeat;
+  }
+  &__title {
+    margin: 0 0 0 24px;
+    color: $mist100Color;
+    font-size: $fontSizeH2;
+    line-height: $lineHeightH2;
+    font-weight: $fontWeight400;
+    @media screen and (max-width: 568px) {
+      font-size: $fontSizeH4;
+      line-height: $lineHeightH4;
+    }
+  }
+}

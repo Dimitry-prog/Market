@@ -1,0 +1,267 @@
+.form {
+  &__delivery {
+    display: grid;
+    grid-template-columns: 1fr 448px;
+    column-gap: 24px;
+    padding: 0 24px;
+    @media screen and(max-width: 899px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 568px) {
+      padding: 0 12px;
+    }
+  }
+  &__order {
+    @media screen and(max-width: 899px) {
+      border-bottom: 1px solid $mist10Color;
+    }
+  }
+  &__fieldset {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0 0 40px 0;
+    @media screen and (max-width: 568px) {
+      padding-bottom: 24px;
+    }
+    &--data {
+      border-bottom: 1px solid $mist10Color;
+    }
+    &--payment {
+      padding-top: 40px;
+      border-bottom: 1px solid $mist10Color;
+    }
+    &--recipient {
+      padding-top: 40px;
+      border-bottom: 1px solid $mist10Color;
+    }
+  }
+  &__text {
+    margin: 0;
+    color: $primaryColor;
+    font-family: $fontFamilyInter;
+    font-style: $fontStyleNormal;
+    font-weight: $fontWeight400;
+    font-size: $fontSizeH4;
+    line-height: $lineHeightH4;
+    padding-bottom: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 500px;
+    @media screen and (max-width: 568px) {
+      font-size: $fontSize16;
+      line-height: $lineHeight24;
+      max-width: 296px;
+    }
+    &--comment {
+      padding: 40px 0 24px;
+      @media screen and (max-width: 568px) {
+        padding-top: 24px;
+      }
+    }
+  }
+  &__way {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+    @media screen and (max-width: 568px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 12px;
+    }
+  }
+  &__label {
+    width: 100%;
+    position: relative;
+  }
+  &__subtext {
+    margin: 0;
+    color: $mist100Color;
+    font-size: $fontSize18;
+    line-height: $lineHeight24;
+    padding-bottom: 24px;
+    &--data {
+      padding-bottom: 8px;
+    }
+    &--attention {
+      margin: 0;
+      color: $mist50Color;
+      font-size: $fontSize12;
+      line-height: $lineHeight16;
+      letter-spacing: 0.32px;
+    }
+  }
+  &__address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  &__input {
+    max-width: 448px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1299px) {
+      max-width: 368px;
+    }
+    @media screen and (max-width: 1140px) {
+      max-width: 100%;
+    }
+    &::placeholder {
+      color: $mist25Color;
+      font-family: $fontFamilyInter;
+      font-style: $fontStyleNormal;
+      font-weight: $fontWeight400;
+      font-size: $fontSize14;
+      line-height: $lineHeight24;
+      letter-spacing: 0.32px;
+    }
+  }
+  &__data {
+    position: relative;
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    @media screen and (max-width: 899px) {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+  &__payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+    @media screen and (max-width: 568px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 12px;
+    }
+  }
+  &__recipient {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  &__comment {}
+  &__textarea {}
+  &__submit {
+    @media screen and (max-width: 568px) {
+      font-size: $fontSize14;
+      line-height: $lineHeight16;
+    }
+    &--delivery {
+      @media screen and (min-width: 899px) {
+        display: none;
+      }
+      @media screen and (max-width: 568px) {
+        margin-bottom: 64px;
+      }
+    }
+  }
+  &--subscription {
+    display: flex;
+  }
+  &--subscription-submit {
+    background-color: $subscBgColor;
+  }
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    &:checked+.custom-radio__span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/radio.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid $primaryColor;
+    }
+    &:disabled+.custom-radio__span {
+      border: 1px solid $mist10Color;
+    }
+    &:focus+.custom-radio__span {
+      box-shadow: 0 0 5px $primaryColor;
+    }
+  }
+  &__span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid $mist25Color;
+  }
+  &__text {
+    color: $mist100Color;
+    font-family: $fontFamilyInter;
+    font-style: $fontStyleNormal;
+    font-weight: $fontWeight400;
+    font-size: $fontSize14;
+    line-height: $lineHeight16;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+}
+
+.delivery {
+  &__radio {}
+  &__text {
+    margin: 0;
+    color: $mist50Color;
+    font-size: $fontSize12;
+    line-height: $lineHeight16;
+    letter-spacing: 0.32px;
+    &--pickup {
+      grid-row: 2;
+    }
+    &--info-first {
+      grid-row: 2;
+    }
+  }
+}
+
+.input {
+  &--city {}
+  &--street {}
+  &--house {}
+  &--apartment {}
+  &--data {}
+  &--time {}
+  &--first-name {}
+  &--last-name {}
+  &--email {}
+  &--phone {}
+}
+
+.textarea {
+  border: 1px solid $mist25Color;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  min-height: 80px;
+  box-sizing: border-box;
+  resize: none;
+  &::placeholder {
+    color: $mist25Color;
+    font-family: $fontFamilyInter;
+    font-style: $fontStyleNormal;
+    font-weight: $fontWeight400;
+    font-size: $fontSize14;
+    line-height: $lineHeight24;
+    letter-spacing: 0.32px;
+  }
+  &__counter {
+    margin: 8px 0 0;
+    color: $mist25Color;
+    font-size: $fontSize12;
+    line-height: $lineHeight16;
+    letter-spacing: 0.32px;
+  }
+}

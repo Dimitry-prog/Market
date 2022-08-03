@@ -1,0 +1,30 @@
+.main {
+  &__path {
+    padding: 40px 0 24px 24px;
+    @media screen and (max-width: 568px) {
+      padding: 24px 12px 24px;
+    }
+  }
+}
+
+.path {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  &__link {
+    text-decoration: none;
+    color: $mist25Color;
+    font-family: $fontFamilyInter;
+    font-style: $fontStyleNormal;
+    font-weight: $fontWeight400;
+    font-size: $fontSize12;
+    line-height: $lineHeight16;
+    letter-spacing: 0.32px;
+    &--home {}
+    &--shop {}
+    &--cart {}
+    &:last-child {
+      color: $secondaryColor;
+    }
+  }
+}

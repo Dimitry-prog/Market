@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Market</title>
+
+</head>
+
+<body class="root">
+  <div class="root__wrapper">
+    <header class="header root__header">
+      <a href="#" class="logo header__logo">
+      </a>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Магазин
+              <svg class="svg svg__icon svg--arr-down" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">Портфолио
+              <svg class="svg svg__icon svg--arr-down" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">О компании
+              <svg class="svg svg__icon svg--arr-down" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="phone header__phone">8 (800) 123-54-76</p>
+        <div class="nav__toggle toggle">
+          <svg class="svg svg__icon svg--menu-toggle" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.5H16V0.5H0V1.5ZM0 7.5H16V6.5H0V7.5ZM0 13.5H16V12.5H0V13.5Z" fill="#B39166" />
+          </svg>
+          <div class="footer__content footer__content--toggle">
+            <div class="footer__contacts footer__contacts--toggle">
+              <p class="phone footer__phone">8 (800) 123-54-76</p>
+              <p class="footer__email">gift@liyaconcierge.com</p>
+              <ul class="socials footer__socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                      <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                      <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                      <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                      <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                      <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                      <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="nav footer__nav footer__nav--toggle">
+              <div class="footer__shop">
+                <div class="footer__header">
+                  <h4 class="footer__title">Магазин</h4>
+                  <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                      d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+                  </svg>
+                </div>
+                <ul class="footer__list footer__list--toggle">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Корпоративные подарки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Для неё</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Для него</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Тематические подарки</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__company">
+                <div class="footer__header">
+                  <h4 class="footer__title">О компании</h4>
+                  <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                      d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+                  </svg>
+                </div>
+                <ul class="footer__list footer__list--toggle">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Кто мы</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Наши преимущества</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Сферы работ</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Как мы работаем</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Условия сотрудничества</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__portfolio">
+                <div class="footer__header">
+                  <h4 class="footer__title">Портфолио</h4>
+                  <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                      d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+                  </svg>
+                </div>
+                <ul class="footer__list footer__list--toggle">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Корпоративные подарки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Личные подарки</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Тематические подарки</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="dropdown dropdown--shop">
+        <button class="button shopping-bag header__shopping-bag">
+          <img src="./img/shop_icon.svg" alt="корзина" class="shopping-bag__icon">
+          <span class="shopping-bag__count">4</span>
+        </button>
+        <div class="dropdown__wrapper dropdown__wrapper--shopping-bag">
+          <div class="card card--dropdown">
+            <div class="dropdown__img dropdown__img--cart dropdown__img--shopping-bag">
+              <img src="./img/gal_5.png" alt="Название товара" class="card__img img">
+              <div class="card__mark mark mark--dropdown mark--first">
+                <h5 class="card__mark-title mark__title">ДЛЯ НЕЁ</h5>
+              </div>
+            </div>
+            <div class="dropdown__content">
+              <h4 class="card__title card__title--dropdown">Название товара</h4>
+              <div class="dropdown__footer">
+                <div class="dropdown__counter">
+                  <button class="button dropdown__button button--decrease">
+                    <svg class="svg svg__icon svg--decrease button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M4 7.5H12V8.5H4V7.5Z" fill="#D6B384" />
+                    </svg>
+                  </button>
+                  <input type="text" class="input input--quantity" value="1">
+                  <button class="button dropdown__button button--increase">
+                    <svg class="svg svg__icon svg--increase button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M7.5 7.5V4H8.5V7.5H12V8.5H8.5V12H7.5V8.5H4V7.5L7.5 7.5Z"
+                        fill="#D6B384" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="card__price card__price--cart">9 999 ₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card--dropdown">
+            <div class="dropdown__img dropdown__img--cart dropdown__img--shopping-bag">
+              <img src="./img/gal_8.png" alt="Название товара" class="card__img img">
+              <div class="card__mark mark mark--dropdown">
+                <h5 class="card__mark-title mark__title">новый год</h5>
+              </div>
+            </div>
+            <div class="dropdown__content">
+              <h4 class="card__title card__title--dropdown">Название товара</h4>
+              <div class="dropdown__footer">
+                <div class="dropdown__counter">
+                  <button class="button dropdown__button button--decrease">
+                    <svg class="svg svg__icon svg--decrease button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M4 7.5H12V8.5H4V7.5Z" fill="#D6B384" />
+                    </svg>
+                  </button>
+                  <input type="text" class="input input--quantity" value="1">
+                  <button class="button dropdown__button button--increase">
+                    <svg class="svg svg__icon svg--increase button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M7.5 7.5V4H8.5V7.5H12V8.5H8.5V12H7.5V8.5H4V7.5L7.5 7.5Z"
+                        fill="#D6B384" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="card__price card__price--cart">9 999 ₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="card card--dropdown">
+            <div class="dropdown__img dropdown__img--cart dropdown__img--shopping-bag">
+              <img src="./img/gal_7.png" alt="Название товара" class="card__img img">
+              <div class="card__mark mark mark--dropdown">
+                <h5 class="card__mark-title mark__title">Для него</h5>
+              </div>
+            </div>
+            <div class="dropdown__content">
+              <h4 class="card__title card__title--dropdown">Название товара</h4>
+              <div class="dropdown__footer">
+                <div class="dropdown__counter">
+                  <button class="button dropdown__button button--decrease">
+                    <svg class="svg svg__icon svg--decrease button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M4 7.5H12V8.5H4V7.5Z" fill="#D6B384" />
+                    </svg>
+                  </button>
+                  <input type="text" class="input input--quantity" value="1">
+                  <button class="button dropdown__button button--increase">
+                    <svg class="svg svg__icon svg--increase button__icon" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M7.5 7.5V4H8.5V7.5H12V8.5H8.5V12H7.5V8.5H4V7.5L7.5 7.5Z"
+                        fill="#D6B384" />
+                    </svg>
+                  </button>
+                </div>
+                <p class="card__price card__price--cart">9 999 ₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="total dropdown__total">
+            <p class="total__text">Итого:</p>
+            <p class="total__price">9 999 999 999 ₽</p>
+          </div>
+          <a href="./cart.html" class="button dropdown__button button--shopping-bag">Перейти в корзину</a>
+        </div>
+      </div>
+    </header>
+    <main class="main root__main">
+      <div class="path main__path">
+        <a href="#" class="path__link path__link--home">Главная</a>
+        <svg class="svg svg__icon svg--arr-right" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+            d="M5.35359 5.35359L1.35359 9.35359L0.646484 8.64649L4.29293 5.00004L0.646485 1.35359L1.35359 0.646484L5.35359 4.64649C5.54885 4.84175 5.54885 5.15833 5.35359 5.35359Z" />
+        </svg>
+        <a href="#" class="path__link path__link--shop active">Магазин</a>
+      </div>
+      <section class="banner main__banner">
+        <h2 class="banner__title">Готовые решения</h2>
+      </section>
+      <section class="content main__content">
+        <aside class="filter main__filter">
+          <h3 class="filter__title">Категории</h3>
+          <form class="filter__form from">
+            <label class="filter__label custom-checkbox">
+              <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+              <span class="custom-checkbox__span"></span>
+              <span class="custom-checkbox__text">Все</span>
+            </label>
+            <label class="filter__label custom-checkbox">
+              <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+              <span class="custom-checkbox__span"></span>
+              <span class="custom-checkbox__text">Корпоративные</span>
+            </label>
+            <div class="filter__label--wrapper">
+              <label class="filter__label custom-checkbox">
+                <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                <span class="custom-checkbox__span"></span>
+                <span class="custom-checkbox__text">Личные</span>
+                <svg class="svg svg__icon svg--arr-down" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd"
+                    d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+                </svg>
+              </label>
+              <div class="filter__label--children">
+                <label class="filter__label custom-checkbox filter__label--for-her custom-checkbox--children">
+                  <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                  <span class="custom-checkbox__span"></span>
+                  <span class="custom-checkbox__text">Для неё</span>
+                </label>
+                <label class="filter__label custom-checkbox filter__label--for-him custom-checkbox--children">
+                  <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                  <span class="custom-checkbox__span"></span>
+                  <span class="custom-checkbox__text">Для него</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter__label--wrapper">
+              <label class="filter__label custom-checkbox">
+                <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                <span class="custom-checkbox__span"></span>
+                <span class="custom-checkbox__text">Тематические</span>
+                <svg class="svg svg__icon svg--arr-down" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd"
+                    d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+                </svg>
+              </label>
+              <div class="filter__label--children">
+                <label class="filter__label custom-checkbox filter__label--for-her custom-checkbox--children">
+                  <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                  <span class="custom-checkbox__span"></span>
+                  <span class="custom-checkbox__text">8 марта</span>
+                </label>
+                <label class="filter__label custom-checkbox filter__label--for-him custom-checkbox--children">
+                  <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                  <span class="custom-checkbox__span"></span>
+                  <span class="custom-checkbox__text">23 февраля</span>
+                </label><label class="filter__label custom-checkbox filter__label--for-him custom-checkbox--children">
+                  <input type="checkbox" class="filter__checkbox custom-checkbox__input">
+                  <span class="custom-checkbox__span"></span>
+                  <span class="custom-checkbox__text">Новый год</span>
+                </label>
+              </div>
+            </div>
+            <buton type="reset" class="button filter__button">Сбросить</buton>
+          </form>
+        </aside>
+        <button class="button drop-down drop-down__filter">
+          Сначала новые
+          <svg class="svg svg__icon svg--arr-down svg--arr-down-filter" viewBox="0 0 10 6"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+              d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+          </svg>
+        </button>
+        <button class="button drop-down drop-down__category">
+          Категории
+          <svg class="svg svg__icon svg--arr-down svg--arr-down-category" viewBox="0 0 10 6"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+              d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+          </svg>
+        </button>
+        <section class="goods main__goods">
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_1.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Для неё</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_2.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Для него</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_3.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">8 марта</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_4.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Для него</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_5.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Корпоративный</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_6.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">23 февраля</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_7.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Корпоративный</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_8.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Новый год</h5>
+            </div>
+          </div>
+          <div class="goods__item card card--shop">
+            <img src="./img/gal_9.png" alt="Название товара" class="card__img img">
+            <h4 class="card__title">Название товара</h4>
+            <p class="card__price">9 999 ₽</p>
+            <div class="card__mark mark">
+              <h5 class="card__mark-title mark__title">Для неё</h5>
+            </div>
+          </div>
+          <button class="button button--show-more">Показать ещё</button>
+        </section>
+        <div class="pagination main__pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                <svg class="svg svg__icon svg--pag-left" viewBox="0 0 19 10" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd"
+                    d="M2.20711 5.50004L5.35355 8.64648L4.64645 9.35359L0.646447 5.35359C0.451184 5.15833 0.451184 4.84175 0.646447 4.64648L4.64645 0.646484L5.35355 1.35359L2.20711 4.50004L19 4.50004V5.50004L2.20711 5.50004Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                2
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                3
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                ...
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                10
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                <svg class="svg svg__icon svg--pag-right" viewBox="0 0 19 10" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18 5L18.3536 5.35355C18.5488 5.15829 18.5488 4.84171 18.3536 4.64645L18 5ZM13.6464 1.35355L17.6464 5.35355L18.3536 4.64645L14.3536 0.646447L13.6464 1.35355ZM17.6464 4.64645L13.6464 8.64645L14.3536 9.35355L18.3536 5.35355L17.6464 4.64645ZM18 4.5L1.98682e-08 4.5L-1.98682e-08 5.5L18 5.5V4.5Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown dropdown--show-quantity">
+            <button class="button drop-down drop-down__pagination">
+              Показывать по 9
+              <svg class="svg svg__icon svg--arr-down svg--arr-down-filter" viewBox="0 0 10 6"
+                xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </button>
+            <div class="dropdown__wrapper">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">
+                    Показывать по 6
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">
+                    Показывать по 9
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">
+                    Показывать по 12
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer root__footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__contacts">
+          <a href="#" class="logo footer__logo">
+          </a>
+          <p class="phone footer__phone">8 (800) 123-54-76</p>
+          <p class="footer__email">gift@liyaconcierge.com</p>
+          <ul class="socials footer__socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                  <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                  <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                  <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                  <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg class="svg svg__icon svg__social" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#F5F2F0">
+                  <rect x=" 0.5" y="0.5" width="23" height="23" stroke="#2E1C17" />
+                  <path d="M1 1L23 23M23 1L1 23" stroke="#2E1C17" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav footer__nav">
+          <div class="footer__shop">
+            <div class="footer__header">
+              <h4 class="footer__title">Магазин</h4>
+              <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Корпоративные подарки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Для неё</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Для него</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Тематические подарки</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__company">
+            <div class="footer__header">
+              <h4 class="footer__title">О компании</h4>
+              <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Кто мы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Наши преимущества</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Сферы работ</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Как мы работаем</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Условия сотрудничества</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__portfolio">
+            <div class="footer__header">
+              <h4 class="footer__title">Портфолио</h4>
+              <svg class="svg svg__icon svg--arr-down-footer" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M4.64648 5.35359L0.646484 1.35359L1.35359 0.646484L5.00004 4.29293L8.64648 0.646484L9.35359 1.35359L5.35359 5.35359C5.15833 5.54885 4.84175 5.54885 4.64648 5.35359Z" />
+              </svg>
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Корпоративные подарки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Личные подарки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Тематические подарки</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__subscription">
+          <p class="footer__text">Оставьте email и получите подборку актуальных корпоративных подарков в 2022 году:</p>
+          <form class="form footer__form form--subscription">
+            <input type="email" class="input form__input input--footer" placeholder="email">
+            <button type="submit" class="button form__submit form--subscription-submit">
+              <svg class="svg svg__icon svg--submit" viewBox="0 0 19 10" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 5L18.3536 5.35355C18.5488 5.15829 18.5488 4.84171 18.3536 4.64645L18 5ZM13.6464 1.35355L17.6464 5.35355L18.3536 4.64645L14.3536 0.646447L13.6464 1.35355ZM17.6464 4.64645L13.6464 8.64645L14.3536 9.35355L18.3536 5.35355L17.6464 4.64645ZM18 4.5L1.98682e-08 4.5L-1.98682e-08 5.5L18 5.5V4.5Z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copy">&copy; giftliyaconcierge </p>
+        <p class="footer__copy">Консьерж-бюро корпоративных подарков премиум сегмента, 2022г.</p>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>

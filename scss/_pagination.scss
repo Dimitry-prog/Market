@@ -1,0 +1,75 @@
+.main {
+  &__pagination {
+    padding: 12px 24px 0 0;
+    @media screen and (max-width: 899px) {
+      padding: 24px 24px 0;
+    }
+  }
+}
+
+.pagination {
+  grid-column: 2/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 899px) {
+    grid-column: 1;
+  }
+  @media screen and (max-width: 568px) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 8px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $secondaryColor;
+    font-family: $fontFamilyInter;
+    font-style: $fontStyleNormal;
+    font-weight: $fontWeight400;
+    font-size: $fontSize14;
+    line-height: $lineHeight16;
+    letter-spacing: 0.32px;
+    transition: $transition5;
+    &.active {
+      background-color: $secondaryColor;
+      color: $colorWhite;
+    }
+    &:hover {
+      background-color: $secondaryHoverColor;
+      color: $colorWhite;
+    }
+    &:hover .svg__icon {
+      fill: $colorWhite;
+    }
+  }
+}
+
+.svg {
+  &--pag-left {}
+  &--pag-right {}
+  &--arr-down {}
+  &--arr-down-filter {}
+  &__icon {}
+}
+
+.button {}
+
+.drop-down {
+  &__pagination {}
+}
